@@ -1,27 +1,284 @@
 {
-  "lastUpdated": "2026-04-06T00:00:00Z",
-  "totalCount": 21,
+  "lastUpdated": "2026-04-06T15:39:48Z",
+  "totalCount": 20,
   "items": [
-    {"date":"2026-04-01","title":"Power Apps MCP Server がパブリックプレビューに","summary":"AIエージェントがアプリ内のデータ入力を自動化し、人間のレビュー付きでレコードを作成可能に。エージェントフィードによる監視機能も追加。","status":"Preview","product":"Power Apps","tags":["Power Apps","MCP","AI Agent"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/","source":"Blog"},
-    {"date":"2026-04-01","title":"2026 Release Wave 1 計画が公開","summary":"Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse にわたる数百の新機能が2026年4月〜9月にリリース予定。","status":"開発中","product":"Power Platform","tags":["Release Plan","2026 Wave 1"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/","source":"Blog"},
-    {"date":"2026-03-15","title":"モデル駆動型アプリのモダンルックがデフォルトに","summary":"2026 Wave 1でモダンルックが既定となり、ストリームラインヘッダーとナビゲーションが一般提供へ。","status":"GA","product":"Power Apps","tags":["Power Apps","Model-driven","Modern UI"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/","source":"Blog"},
-    {"date":"2026-03-15","title":"Canvas Appオフラインモードのリアルタイムオンラインアクセス","summary":"Canvas AppsからDataverseデータへのリアルタイムアクセスが可能に。FetchXMLを使用した高度なオフラインプロファイル設定もサポート。","status":"Preview","product":"Power Apps","tags":["Canvas App","Offline","Dataverse","FetchXML"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/","source":"Blog"},
-    {"date":"2026-03-10","title":"ライセンス容量レポートが Admin Center で一般提供","summary":"Power Automate のライセンス使用状況を管理者が一元管理。容量超過ユーザーやフローの特定が可能に。","status":"GA","product":"管理・ガバナンス","tags":["Admin Center","Licensing","Power Automate"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/","source":"Blog"},
-    {"date":"2026-03-10","title":"Power Platform Inventory が一般提供開始","summary":"テナント管理者向けの統合ビュー。クラウドフロー、Copilot Studioエージェントフロー、Workflowsエージェントを全環境横断で一覧表示。","status":"GA","product":"管理・ガバナンス","tags":["Admin Center","Inventory"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/","source":"Blog"},
-    {"date":"2026-02-17","title":"M365 Copilot Chat がモデル駆動型アプリでプレビュー","summary":"Microsoft 365 Copilotのチャット機能がPower Appsのモデル駆動型アプリ内に統合。アプリデータへの質問やドキュメント生成が可能。","status":"Preview","product":"Power Apps","tags":["Power Apps","Copilot","Model-driven"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/","source":"Blog"},
-    {"date":"2026-02-17","title":"Code Apps in Power Apps が一般提供","summary":"React、Vueなどのコードファーストフレームワークでアプリを構築し、Power Platformのガバナンス機能と統合して展開可能。","status":"GA","product":"Power Apps","tags":["Power Apps","React"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/","source":"Blog"},
-    {"date":"2026-02-17","title":"既定環境からのCanvasアプリ移行レコメンデーション","summary":"Power Platform Advisorが既定環境のCanvasアプリをManaged環境に移行するレコメンデーションを提供。","status":"Preview","product":"管理・ガバナンス","tags":["Admin Center","Canvas App"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/","source":"Blog"},
-    {"date":"2026-02-01","title":"Canvas App 組み込みCopilot が廃止","summary":"Canvas Appに組み込まれたCopilot機能が2026年2月をもって正式に廃止。新規構築ではCopilot Studioの利用を推奨。","status":"廃止","product":"Power Apps","tags":["Canvas App","Copilot"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/","source":"Blog"},
-    {"date":"2026-01-20","title":"エージェントセキュリティの管理コントロール強化","summary":"Copilot Studioのリアルタイムリスク評価とAI搭載ガバナンスエージェントによる自動テナント監視・修正機能が追加。","status":"Preview","product":"Copilot Studio","tags":["Copilot Studio","Security"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/","source":"Blog"},
-    {"date":"2026-01-15","title":"Dataverse MCP Server で外部ツール連携が拡張","summary":"Model Context Protocolサーバーにより、外部のAIエージェントがDataverseのデータとロジックに安全にアクセス可能に。","status":"Preview","product":"Dataverse","tags":["Dataverse","MCP","Agent"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/","source":"Blog"},
-    {"date":"2025-12-15","title":"Git統合 in Power Platform が一般提供","summary":"エージェント、アプリ、自動化をソースコントロールと同期。ALM管理の複雑さを解消し、完全な監査証跡を実現。","status":"GA","product":"管理・ガバナンス","tags":["Git","ALM","DevOps"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-apps-april-2025-feature-update/","source":"Blog"},
-    {"date":"2025-12-01","title":"Power Pages サーバーロジックが一般提供","summary":"サーバーサイドのカスタムロジック実行がGAに。テーブル権限、Webロール、認証設定を理解したコード生成。","status":"GA","product":"Power Pages","tags":["Power Pages"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/","source":"Blog"},
-    {"date":"2025-11-20","title":"Copilot Studio Agent Academy 公開","summary":"AIエージェント構築のための自己学習型カリキュラムが公開。メーカー、開発者、AI関心層向けの実践的コンテンツ。","status":"GA","product":"Copilot Studio","tags":["Copilot Studio","Learning"],"url":"https://devblogs.microsoft.com/powerplatform/","source":"DevBlog"},
-    {"date":"2025-11-10","title":"Azure AI Foundry モデルが Copilot Studio で利用可能","summary":"GPT-4.1、Llama、DeepSeek等、11,000以上のモデルにアクセス可能。カスタムモデルのファインチューニングもサポート。","status":"Preview","product":"Copilot Studio","tags":["Copilot Studio","Azure AI","LLM"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-apps-may-2025-feature-update/","source":"Blog"},
-    {"date":"2025-10-20","title":"Enhanced Component Properties (ECP) が一般提供","summary":"データ型・関数型プロパティでコンポーネントライブラリのロジック共有が可能に。UXも改善。","status":"GA","product":"Power Apps","tags":["Power Apps","Component"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-apps-may-2025-feature-update/","source":"Blog"},
-    {"date":"2025-10-01","title":"Managed Availability for Power Platform","summary":"Azure Availability Zonesを活用した高可用性。セルフサービスDRによるリージョン間フェイルオーバーも可能。","status":"GA","product":"管理・ガバナンス","tags":["Admin Center"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-apps-march-2025-feature-update/","source":"Blog"},
-    {"date":"2025-09-15","title":"セキュリティコンプライアンス監査設定がGA","summary":"Admin CenterのSecurity Complianceから監査有効化が一般提供。セキュリティ関連テーブルが自動監査対象に。","status":"GA","product":"管理・ガバナンス","tags":["Security","Admin Center"],"url":"https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-apps-april-2025-feature-update/","source":"Blog"},
-    {"date":"2025-09-01","title":"モデル駆動型アプリの検索が高速化","summary":"ファジー検索、ヒットハイライト表示が強化され、大量データからの検索精度と速度が向上。","status":"開発中","product":"Power Apps","tags":["Power Apps","Search","Model-driven"],"url":"https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/","source":"Blog"},
-    {"date":"2025-08-15","title":"Power Platform API-first エコシステムへの進化","summary":"Admin Centerの全機能がパブリックAPIで利用可能に。Copilot管理やスケーラブルな自動化を実現。","status":"Preview","product":"管理・ガバナンス","tags":["Admin Center"],"url":"https://devblogs.microsoft.com/powerplatform/","source":"DevBlog"}
+    {
+      "date": "2026-04-01",
+      "title": "​Building trustworthy AI: A practical framework for adaptive governance",
+      "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen. The post ​Building trustworthy AI: A practical framework for adaptive gov...",
+      "status": "GA",
+      "product": "管理・ガバナンス",
+      "tags": [
+        "Governance"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/01/building-trustworthy-ai-a-practical-framework-for-adaptive-governance/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
+      "summary": "Building enterprise solutions is shifting from writing code to directing AI agents. Instead of stitching together APIs, CLIs, and scripts, developers are increasingly describing intent and letting age...",
+      "status": "GA",
+      "product": "Dataverse",
+      "tags": [
+        "Dataverse",
+        "Agent",
+        "Power Platform Developer Blog",
+        "GitHub Copilot"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2026-03-19",
+      "title": "What’s new in Power Platform: March 2026 feature update",
+      "summary": "Welcome to the Power Platform monthly feature update! We will use this blog to share news in Power Platform from the last month, so you can find a summary of product, community, and learning updates f...",
+      "status": "GA",
+      "product": "Power Platform",
+      "tags": [],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-03-18",
+      "title": "2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot Studio offerings",
+      "summary": "We’re excited to publish the 2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Role-based agents in Microsoft 365 Copilot. The post 2026 release wave 1 plans for Micr...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot"
+      ],
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-02-25",
+      "title": "New quality updates to modern controls in canvas apps",
+      "summary": "This release delivers quality and reliability improvements across nine modern controls in canvas apps, including Combo Box, Text Input, and Date Picker. Focused on real‑world performance, consistent b...",
+      "status": "GA",
+      "product": "Power Apps",
+      "tags": [
+        "Canvas App"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/new-quality-updates-to-modern-controls-in-canvas-apps/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-02-17",
+      "title": "What’s new in Power Platform: February 2026 feature update",
+      "summary": "Apps, agents and Copilot Public preview: M365 Copilot chat in model-driven apps Copilot chat is now available directly inside apps built with Power Apps, bringing the intelligence of Microsoft 365 Cop...",
+      "status": "GA",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps",
+        "Model-driven",
+        "Agent",
+        "Copilot"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-02-11",
+      "title": "Public preview: Power Apps MCP and enhanced agent feed for your business applications",
+      "summary": "The Power Apps MCP Server (Public Preview) introduces a new era of human‑agent collaboration, enabling AI agents to automate repetitive app tasks with built‑in human oversight. Makers gain granular co...",
+      "status": "Preview",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps",
+        "MCP",
+        "Agent"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/public-preview-power-apps-mcp-and-enhanced-agent-feed-for-your-business-applications/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-02-05",
+      "title": "Generally available: host and run code apps in Power Apps",
+      "summary": "We’re excited to announce that code apps in Power Apps are now generally available, empowering developers and IT alike at a moment when organizations are building more custom applications than ever. T...",
+      "status": "GA",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/generally-available-host-and-run-code-apps-in-power-apps/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-01-26",
+      "title": "Breaking down the facts about secure development with Power Platform",
+      "summary": "Today, organizations are being measured by how quickly they can innovate. Whether it’s launching new digital experiences, streamlining operations, or responding to customer needs in real time, the abi...",
+      "status": "GA",
+      "product": "Power Platform",
+      "tags": [
+        "Git",
+        "Agent"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/01/26/breaking-down-the-facts-about-secure-development-with-power-platform/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-01-14",
+      "title": "Announcing Agent Academy: Operative",
+      "summary": "Earlier this year, we launched Agent Academy: Recruit, a foundational learning path designed to help makers and developers get started with building agents in Copilot Studio. The response exceeded our...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "News",
+        "Power Platform Developer Blog"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-agent-academy-operative/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-12-12",
+      "title": "Process Maps as Part of Your Plan: Now Generally Available",
+      "summary": "Process Maps in Power Apps Plans are now generally available, bringing a new level of clarity and collaboration to solution design. This feature allows makers and stakeholders to visualize workflows d...",
+      "status": "GA",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/process-maps-as-part-of-your-plan-now-generally-available/",
+      "source": "Blog"
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Unlock More Value from Your Existing Solutions with Plans",
+      "summary": "You can now create a plan directly from your existing solution, giving you a clear, structured view of what you’ve built and where you can take it next. The post Unlock More Value from Your Existing S...",
+      "status": "GA",
+      "product": "Power Platform",
+      "tags": [],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/unlock-more-value-from-your-existing-solutions-with-plans/",
+      "source": "Blog"
+    },
+    {
+      "date": "2025-08-20",
+      "title": "Announcing Copilot Studio Agent Academy: Your Mission Starts Now",
+      "summary": "Welcome to Copilot Studio Agent Academy Whether you’re just starting your journey with AI agents or looking to sharpen your skills in Microsoft Copilot Studio, we’ve got your mission briefing ready an...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "News",
+        "Power Platform Developer Blog"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-copilot-studio-agent-academy/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-07-30",
+      "title": "Introducing Plan Validation in Copilot Studio Kit",
+      "summary": "Ever wonder why your agent’s answers can be right but for the wrong reasons? Let’s dive into why that matters, with a brief foray into epistemology (bear with me!) Knowledge: More Than Just Right Answ...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "Power Platform Developer Blog"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/plan-validation-cat-kit/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-07-15",
+      "title": "Power Platform API and SDKs: From UX-First to API-First",
+      "summary": "Historically, Power Platform has empowered administrators through the Power Platform Admin Center (PPAC). This UX-first experience offered a seamless, intuitive interface for managing environments, au...",
+      "status": "GA",
+      "product": "管理・ガバナンス",
+      "tags": [
+        "Admin Center",
+        "Power Platform Developer Blog"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Microsoft Copilot Studio ❤️ MCP",
+      "summary": "Ever wished your AI agents could tap into live data or execute actions beyond their built-in capabilities? Enter Model Context Protocol (MCP)—a game-changer for integrating external tools and data sou...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "MCP",
+        "Agent",
+        "Copilot",
+        "Power Platform Developer Blog"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/microsoft-copilot-studio-mcp/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-04-20",
+      "title": "Announcing the ‘Work with Power Fx functions’ Learning Path",
+      "summary": "Based on community feedback, we’ve added a new learning path: Work with Power Fx functions. Check it out! The post Announcing the ‘Work with Power Fx functions’ Learning Path appeared first on Power P...",
+      "status": "GA",
+      "product": "Power Platform",
+      "tags": [
+        "Power Fx",
+        "Power Platform Developer Blog",
+        "Copilot Studio",
+        "Microsoft Copilot Studio"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-the-work-with-power-fx-functions-learning-path/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-03-25",
+      "title": "Announcing the winners of the 2025 Powerful Devs Hack Together",
+      "summary": "The 2025 Powerful Devs Hack Together brought developers together to build secure and scalable AI-powered solutions using Power Platform, Azure, AI Builder, and more. If you missed the event, you can s...",
+      "status": "GA",
+      "product": "AI Builder",
+      "tags": [
+        "AI Builder",
+        "Security",
+        "Power Platform Developer Blog",
+        "Hack Together",
+        "Powerful Devs"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-the-winners-of-the-2025-powerful-devs-hack-together/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-03-05",
+      "title": "Publishing, Managing and Securing: Building with Microsoft Copilot Studio",
+      "summary": "If you would like to start building an agent in Microsoft Copilot Studio, don’t worry we’ve got you covered! In our AI in Action: Building with Copilot Studio series on the Microsoft Power Platform Yo...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "Power Platform Developer Blog",
+        "Agents"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/publishing-managing-and-securing-building-with-microsoft-copilot-studio/",
+      "source": "DevBlog"
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Integrate Copilot Studio agents with Microsoft Entra External ID to give your customers access",
+      "summary": "Learn how to integrate Copilot Studio agents with Microsoft Entra External ID using the Generic OAUTH 2.0 service provider option, ensuring your customers can securely log in to your agents. The post ...",
+      "status": "GA",
+      "product": "Copilot Studio",
+      "tags": [
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "Power Platform Developer Blog",
+        "Agents"
+      ],
+      "url": "https://devblogs.microsoft.com/powerplatform/integrate-copilot-studio-agents-with-microsoft-entra-external-id-to-give-your-customers-access/",
+      "source": "DevBlog"
+    }
   ]
 }
