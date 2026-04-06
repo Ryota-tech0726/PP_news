@@ -1,0 +1,38 @@
+name: Update Power Platform News
+
+on:
+  schedule:
+    # 毎日 UTC 15:00 (JST 0:00) に実行
+    - cron: '0 15 * * *'
+  workflow_dispatch: # 手動実行も可能
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch RSS feeds and generate news.json
+        run: python fetch_news.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/news.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update news.json $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
