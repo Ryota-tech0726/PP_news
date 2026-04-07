@@ -1,18 +1,22 @@
 {
-  "lastUpdated": "2026-04-06T15:39:48Z",
+  "lastUpdated": "2026-04-07T16:06:37Z",
   "totalCount": 20,
   "items": [
     {
-      "date": "2026-04-01",
-      "title": "​Building trustworthy AI: A practical framework for adaptive governance",
-      "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen. The post ​Building trustworthy AI: A practical framework for adaptive gov...",
+      "date": "2026-04-06",
+      "title": "Agent Academy Spring Drop: Special Ops, Cowork Collective, and a Whole New Look",
+      "summary": "We’ve shipped a big round of updates to Agent Academy. Two new sections, a completely redone site experience, and more missions on the way. Here’s what’s changed. Quick recap for anyone new Agent Acad...",
       "status": "GA",
-      "product": "管理・ガバナンス",
+      "product": "Copilot Studio",
       "tags": [
-        "Governance"
+        "Copilot Studio",
+        "Agent",
+        "Copilot",
+        "News",
+        "Power Platform Developer Blog"
       ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/01/building-trustworthy-ai-a-practical-framework-for-adaptive-governance/",
-      "source": "Blog"
+      "url": "https://devblogs.microsoft.com/powerplatform/agent-academy-update-special-ops-cowork-collective/",
+      "source": "DevBlog"
     },
     {
       "date": "2026-04-01",
@@ -158,6 +162,18 @@
       "source": "Blog"
     },
     {
+      "date": "2025-11-18",
+      "title": "Inside the new Power Apps: The future of app development",
+      "summary": "Discover how the new Power Apps empowers every developer to build intelligent, connected apps faster than ever. The post Inside the new Power Apps: The future of app development appeared first on Micr...",
+      "status": "GA",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2025/11/18/inside-the-new-power-apps-the-future-of-app-development/",
+      "source": "Blog"
+    },
+    {
       "date": "2025-08-20",
       "title": "Announcing Copilot Studio Agent Academy: Your Mission Starts Now",
       "summary": "Welcome to Copilot Studio Agent Academy Whether you’re just starting your journey with AI agents or looking to sharpen your skills in Microsoft Copilot Studio, we’ve got your mission briefing ready an...",
@@ -262,22 +278,6 @@
         "Agents"
       ],
       "url": "https://devblogs.microsoft.com/powerplatform/publishing-managing-and-securing-building-with-microsoft-copilot-studio/",
-      "source": "DevBlog"
-    },
-    {
-      "date": "2025-02-28",
-      "title": "Integrate Copilot Studio agents with Microsoft Entra External ID to give your customers access",
-      "summary": "Learn how to integrate Copilot Studio agents with Microsoft Entra External ID using the Generic OAUTH 2.0 service provider option, ensuring your customers can securely log in to your agents. The post ...",
-      "status": "GA",
-      "product": "Copilot Studio",
-      "tags": [
-        "Copilot Studio",
-        "Agent",
-        "Copilot",
-        "Power Platform Developer Blog",
-        "Agents"
-      ],
-      "url": "https://devblogs.microsoft.com/powerplatform/integrate-copilot-studio-agents-with-microsoft-entra-external-id-to-give-your-customers-access/",
       "source": "DevBlog"
     }
   ]
