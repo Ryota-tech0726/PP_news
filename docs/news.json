@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T16:06:37Z",
+  "lastUpdated": "2026-04-08T16:10:53Z",
   "totalCount": 20,
   "items": [
     {
@@ -17,6 +17,32 @@
       ],
       "url": "https://devblogs.microsoft.com/powerplatform/agent-academy-update-special-ops-cowork-collective/",
       "source": "DevBlog"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Public Preview: Your business apps, now part of every conversation",
+      "summary": "Bring your Power Apps into Microsoft 365 Copilot. In public preview, makers can enable conversational access to model-driven app data with Grids and Forms, with Custom Tools coming soon. The post Publ...",
+      "status": "Preview",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps",
+        "Model-driven",
+        "Copilot"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/public-preview-your-business-apps-now-part-of-every-conversation/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-04-01",
+      "title": "​Building trustworthy AI: A practical framework for adaptive governance",
+      "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen. The post ​Building trustworthy AI: A practical framework for adaptive gov...",
+      "status": "GA",
+      "product": "管理・ガバナンス",
+      "tags": [
+        "Governance"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/01/building-trustworthy-ai-a-practical-framework-for-adaptive-governance/",
+      "source": "Blog"
     },
     {
       "date": "2026-04-01",
@@ -149,28 +175,6 @@
         "Power Apps"
       ],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/process-maps-as-part-of-your-plan-now-generally-available/",
-      "source": "Blog"
-    },
-    {
-      "date": "2025-12-03",
-      "title": "Unlock More Value from Your Existing Solutions with Plans",
-      "summary": "You can now create a plan directly from your existing solution, giving you a clear, structured view of what you’ve built and where you can take it next. The post Unlock More Value from Your Existing S...",
-      "status": "GA",
-      "product": "Power Platform",
-      "tags": [],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/unlock-more-value-from-your-existing-solutions-with-plans/",
-      "source": "Blog"
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Inside the new Power Apps: The future of app development",
-      "summary": "Discover how the new Power Apps empowers every developer to build intelligent, connected apps faster than ever. The post Inside the new Power Apps: The future of app development appeared first on Micr...",
-      "status": "GA",
-      "product": "Power Apps",
-      "tags": [
-        "Power Apps"
-      ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/2025/11/18/inside-the-new-power-apps-the-future-of-app-development/",
       "source": "Blog"
     },
     {
