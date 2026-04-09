@@ -1,7 +1,19 @@
 {
-  "lastUpdated": "2026-04-08T16:10:53Z",
+  "lastUpdated": "2026-04-09T16:14:26Z",
   "totalCount": 20,
   "items": [
+    {
+      "date": "2026-04-08",
+      "title": "Power Platform Monitor Alerts Are Now Generally Available",
+      "summary": "We are excited to announce that Power Platform Monitor alerts for apps, agents, and flows are now generally available! Monitor alerts meet the reliability and maturity standards required for general a...",
+      "status": "GA",
+      "product": "Power Automate",
+      "tags": [
+        "Agent"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
+      "source": "Blog"
+    },
     {
       "date": "2026-04-06",
       "title": "Agent Academy Spring Drop: Special Ops, Cowork Collective, and a Whole New Look",
@@ -164,18 +176,6 @@
       ],
       "url": "https://devblogs.microsoft.com/powerplatform/announcing-agent-academy-operative/",
       "source": "DevBlog"
-    },
-    {
-      "date": "2025-12-12",
-      "title": "Process Maps as Part of Your Plan: Now Generally Available",
-      "summary": "Process Maps in Power Apps Plans are now generally available, bringing a new level of clarity and collaboration to solution design. This feature allows makers and stakeholders to visualize workflows d...",
-      "status": "GA",
-      "product": "Power Apps",
-      "tags": [
-        "Power Apps"
-      ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/process-maps-as-part-of-your-plan-now-generally-available/",
-      "source": "Blog"
     },
     {
       "date": "2025-08-20",
