@@ -5,8 +5,8 @@ Power Platform ニュース ダイジェスト - RSS フィード取得スクリ
   1. Power Platform Blog (powerapps.microsoft.com/en-us/blog/feed/)
   2. Power Platform Developer Blog (devblogs.microsoft.com/powerplatform/feed/)
 
-機械翻訳: Google翻訳の無料WebAPI (translate.googleapis.com) を使用
-タグ/製品フィルター: 製品名のみ (7カテゴリ)
+機械翻訳: Google翻訳の無料WebAPI
+  - 製品名・固有名詞・技術用語は英語のまま保持 (約110ワード)
 出力: docs/news.json
 """
 
@@ -32,7 +32,7 @@ FEEDS = [
     },
 ]
 
-# 製品判定キーワード (タグ・フィルターで共通利用)
+# 製品判定キーワード
 PRODUCT_KEYWORDS = {
     "Power Apps": ["power apps", "powerapps", "canvas app", "model-driven", "model driven", "code apps"],
     "Power Automate": ["power automate", "process mining", "rpa", "desktop flow", "cloud flow"],
@@ -44,10 +44,155 @@ PRODUCT_KEYWORDS = {
                          "admin center", "security", "compliance", "licensing"],
 }
 
-# 表示用の製品リスト順序 (タグを付ける際の優先順位)
 PRODUCT_PRIORITY = [
     "Power Apps", "Power Automate", "Copilot Studio", "Power Pages",
     "Dataverse", "AI Builder", "管理・ガバナンス",
+]
+
+# 英語のまま残すキーワード (約110ワード)
+# 翻訳時にプレースホルダーに置換し、翻訳後に戻す
+# 長いキーワードから先に処理されるため、順序は自動ソートされる
+KEEP_ENGLISH_KEYWORDS = [
+    # ========== Microsoft製品・プラットフォーム ==========
+    "Microsoft Power Platform",
+    "Microsoft 365 Copilot",
+    "Microsoft Power Apps",
+    "Microsoft Dataverse",
+    "Microsoft Copilot Studio",
+    "Microsoft Teams",
+    "Microsoft Entra",
+    "Microsoft Fabric",
+    "Microsoft Learn",
+    "Power Platform",
+    "Power Apps",
+    "Power Automate",
+    "Power Automate for desktop",
+    "Power Apps Studio",
+    "Power Platform admin center",
+    "Power Platform CLI",
+    "Power Platform inventory",
+    "Copilot Studio",
+    "Power Pages",
+    "Dataverse",
+    "Dataverse SDK",
+    "Dataverse Search",
+    "Dataverse accelerator",
+    "AI Builder",
+    "Power BI",
+    "Power Fx",
+    "Dynamics 365",
+
+    # ========== Azure関連 ==========
+    "Azure OpenAI",
+    "Azure AI Foundry",
+    "Azure AI Services",
+    "Azure Synapse Link",
+    "Azure Synapse",
+    "Azure Data Lake",
+    "Azure App Insights",
+    "Entra ID",
+
+    # ========== 外部ツール・サービス ==========
+    "GitHub Copilot CLI",
+    "GitHub Copilot",
+    "Claude Code",
+    "Visual Studio Code",
+    "VS Code extension",
+    "VS Code",
+    "vibe.powerapps.com",
+
+    # ========== 機能・コンポーネント ==========
+    "Agent Academy",
+    "Agent Feed",
+    "Agent Flows",
+    "Agent API",
+    "Plan Designer",
+    "Plan designer",
+    "Canvas Apps",
+    "Canvas App",
+    "Model-driven Apps",
+    "Model-driven App",
+    "Model-driven",
+    "Managed Environments",
+    "Managed Environment",
+    "Admin Center",
+    "Enhanced Component Properties",
+    "Component Library",
+    "Security Compliance",
+    "Power Platform Advisor",
+    "Code Apps",
+    "Cloud Flow",
+    "Desktop Flow",
+    "Agent Flow",
+    "Server Logic",
+    "Process Mining",
+    "Object-Centric Process Mining",
+    "OCPM",
+    "Process Intelligence",
+    "Work IQ",
+    "Generative Page",
+    "generative pages",
+    "modern controls",
+    "Web API",
+    "Web Template",
+    "Web Application Firewall",
+    "Content Security Policy",
+    "Virtual Network",
+
+    # ========== モダンコントロール名 ==========
+    "Combo Box",
+    "Date Picker",
+    "Text Input",
+    "Number Input",
+    "Tab List",
+    "Info Button",
+
+    # ========== セキュリティ・ガバナンス ==========
+    "Role-based access control",
+    "Run-only user role",
+    "Managed identities",
+
+    # ========== 技術プロトコル・用語 ==========
+    "Model Context Protocol",
+    "MCP Server",
+    "MCP",
+    "FetchXML",
+    "Dataflows",
+    "Dataflow",
+    "Connectors",
+    "Connector",
+    "Liquid",
+    "REST API",
+    "OAuth 2.0",
+    "IntelliSense",
+    "npm CLI",
+
+    # ========== ステータス・リリース用語 ==========
+    "General Availability",
+    "Generally Available",
+    "Public Preview",
+
+    # ========== 略語・短い用語 ==========
+    "Copilot",
+    "Agents",
+    "Agent",
+    "Workflows",
+    "Workflow",
+    "DLP",
+    "ALM",
+    "SDK",
+    "API",
+    "RSS",
+    "GA",
+    "OAuth",
+    "SSO",
+    "MFA",
+    "KPI",
+    "DNA",
+    "ERP",
+    "React",
+    "TypeScript",
+    "JavaScript",
 ]
 
 
@@ -64,19 +209,60 @@ def strip_html(text: str) -> str:
     return text
 
 
+def protect_keywords(text: str) -> tuple:
+    """
+    残すキーワードをプレースホルダーに置換する。
+    長いキーワードから順に処理 (部分一致による誤置換を防ぐ)
+    """
+    mapping = {}
+    protected = text
+    sorted_keywords = sorted(set(KEEP_ENGLISH_KEYWORDS), key=len, reverse=True)
+
+    for keyword in sorted_keywords:
+        pattern = re.compile(r'\b' + re.escape(keyword) + r'\b', re.IGNORECASE)
+
+        def replace_fn(match):
+            placeholder_idx = len(mapping)
+            placeholder = f"XKEEPX{placeholder_idx}XKEEPX"
+            mapping[placeholder] = keyword
+            return placeholder
+
+        protected = pattern.sub(replace_fn, protected)
+
+    return protected, mapping
+
+
+def restore_keywords(text: str, mapping: dict) -> str:
+    """プレースホルダーを元の英語キーワードに戻す"""
+    result = text
+    for placeholder, keyword in mapping.items():
+        result = result.replace(placeholder, keyword)
+        # Google翻訳がスペースや大文字小文字を変えた場合の救済
+        idx = list(mapping.keys()).index(placeholder)
+        loose_pattern = re.compile(
+            r'x\s*keep\s*x\s*' + str(idx) + r'\s*x\s*keep\s*x',
+            re.IGNORECASE
+        )
+        result = loose_pattern.sub(keyword, result)
+    return result
+
+
 def translate_to_ja(text: str) -> str:
-    """Google翻訳の無料WebAPIで英語→日本語に翻訳。失敗時は元のテキストを返す"""
+    """英語→日本語翻訳。固有名詞は英語のまま保持"""
     if not text or not text.strip():
         return text
     if len(text) > 1500:
         text = text[:1500]
+
+    protected_text, mapping = protect_keywords(text)
+
     try:
         params = {
             "client": "gtx",
             "sl": "en",
             "tl": "ja",
             "dt": "t",
-            "q": text,
+            "q": protected_text,
         }
         url = "https://translate.googleapis.com/translate_a/single?" + urllib.parse.urlencode(params)
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -84,14 +270,14 @@ def translate_to_ja(text: str) -> str:
             data = json.loads(resp.read().decode("utf-8"))
         if data and data[0]:
             translated = "".join(seg[0] for seg in data[0] if seg[0])
-            return translated.strip() or text
+            translated = translated.strip() or text
+            return restore_keywords(translated, mapping)
     except Exception as e:
         print(f"  Translation failed: {e}", file=sys.stderr)
     return text
 
 
 def detect_products(title: str, summary: str) -> list:
-    """製品を判定して、該当する製品名のリストを返す (優先順)"""
     combined = (title + " " + summary).lower()
     matched = []
     for product in PRODUCT_PRIORITY:
@@ -142,14 +328,11 @@ def parse_rss(xml_bytes: bytes, source: str) -> list:
         if not title_en:
             continue
 
-        # 製品タグを判定 (英語原文ベース)
         products = detect_products(title_en, desc_en)
         primary_product = products[0] if products else "Power Platform"
 
-        # 要約を300文字で切る
         summary_en = desc_en[:300] + "..." if len(desc_en) > 300 else desc_en
 
-        # 日本語に翻訳
         print(f"  Translating: {title_en[:60]}...")
         title_ja = translate_to_ja(title_en)
         summary_ja = translate_to_ja(summary_en)
@@ -194,7 +377,7 @@ def main():
     output = {
         "lastUpdated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "totalCount": len(unique_items),
-        "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です",
+        "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
         "items": unique_items,
     }
 
