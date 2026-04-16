@@ -2,13 +2,13 @@ name: Update Power Platform News
 
 on:
   schedule:
-    # 毎日 UTC 15:00 (JST 0:00) に実行
     - cron: '0 15 * * *'
-  workflow_dispatch: # 手動実行も可能
+  workflow_dispatch:
 
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 jobs:
   update-news:
@@ -25,7 +25,7 @@ jobs:
       - name: Fetch RSS feeds and generate news.json
         run: python fetch_news.py
 
-      - name: Commit and push if changed
+      - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -36,3 +36,26 @@ jobs:
             git commit -m "chore: update news.json $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push
           fi
+
+  deploy:
+    needs: update-news
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
