@@ -6,6 +6,7 @@ Power Platform ニュース ダイジェスト - RSS フィード取得スクリ
   2. Power Platform Developer Blog (devblogs.microsoft.com/powerplatform/feed/)
 
 機械翻訳: Google翻訳の無料WebAPI (translate.googleapis.com) を使用
+タグ/製品フィルター: 製品名のみ (7カテゴリ)
 出力: docs/news.json
 """
 
@@ -31,9 +32,10 @@ FEEDS = [
     },
 ]
 
+# 製品判定キーワード (タグ・フィルターで共通利用)
 PRODUCT_KEYWORDS = {
     "Power Apps": ["power apps", "powerapps", "canvas app", "model-driven", "model driven", "code apps"],
-    "Power Automate": ["power automate", "flow", "process mining", "rpa", "desktop flow", "cloud flow"],
+    "Power Automate": ["power automate", "process mining", "rpa", "desktop flow", "cloud flow"],
     "Copilot Studio": ["copilot studio", "copilot", "virtual agent", "pva"],
     "Power Pages": ["power pages", "portal"],
     "Dataverse": ["dataverse", "common data service", "cds"],
@@ -42,20 +44,10 @@ PRODUCT_KEYWORDS = {
                          "admin center", "security", "compliance", "licensing"],
 }
 
-STATUS_KEYWORDS = {
-    "GA": ["generally available", "general availability", "now available", "is now ga", "一般提供"],
-    "Preview": ["public preview", "preview", "in preview"],
-    "廃止": ["deprecat", "retire", "end of support", "sunset", "廃止"],
-    "開発中": ["coming soon", "in development", "planned", "roadmap"],
-}
-
-TAG_KEYWORDS = [
+# 表示用の製品リスト順序 (タグを付ける際の優先順位)
+PRODUCT_PRIORITY = [
     "Power Apps", "Power Automate", "Copilot Studio", "Power Pages",
-    "Dataverse", "AI Builder", "Canvas App", "Model-driven",
-    "MCP", "Git", "ALM", "DevOps", "FetchXML", "Power Fx",
-    "Offline", "Search", "Security", "Governance", "Admin Center",
-    "Azure AI", "LLM", "Agent", "Copilot", "React", "Component",
-    "Licensing", "DLP", "Managed Environment",
+    "Dataverse", "AI Builder", "管理・ガバナンス",
 ]
 
 
@@ -76,7 +68,6 @@ def translate_to_ja(text: str) -> str:
     """Google翻訳の無料WebAPIで英語→日本語に翻訳。失敗時は元のテキストを返す"""
     if not text or not text.strip():
         return text
-    # 長すぎると失敗するので切る
     if len(text) > 1500:
         text = text[:1500]
     try:
@@ -91,7 +82,6 @@ def translate_to_ja(text: str) -> str:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-        # レスポンス形式: [[[訳文, 原文, null, null, ...], ...], ...]
         if data and data[0]:
             translated = "".join(seg[0] for seg in data[0] if seg[0])
             return translated.strip() or text
@@ -100,40 +90,18 @@ def translate_to_ja(text: str) -> str:
     return text
 
 
-def detect_product(title: str, summary: str) -> str:
+def detect_products(title: str, summary: str) -> list:
+    """製品を判定して、該当する製品名のリストを返す (優先順)"""
     combined = (title + " " + summary).lower()
-    for product, keywords in PRODUCT_KEYWORDS.items():
+    matched = []
+    for product in PRODUCT_PRIORITY:
+        keywords = PRODUCT_KEYWORDS[product]
         for kw in keywords:
             if kw in combined:
-                return product
-    return "Power Platform"
-
-
-def detect_status(title: str, summary: str) -> str:
-    combined = (title + " " + summary).lower()
-    for kw in STATUS_KEYWORDS["廃止"]:
-        if kw in combined:
-            return "廃止"
-    for kw in STATUS_KEYWORDS["GA"]:
-        if kw in combined:
-            return "GA"
-    for kw in STATUS_KEYWORDS["Preview"]:
-        if kw in combined:
-            return "Preview"
-    for kw in STATUS_KEYWORDS["開発中"]:
-        if kw in combined:
-            return "開発中"
-    return "GA"
-
-
-def extract_tags(title: str, summary: str) -> list:
-    combined = title + " " + summary
-    tags = []
-    for tag in TAG_KEYWORDS:
-        if tag.lower() in combined.lower():
-            if tag not in tags:
-                tags.append(tag)
-    return tags[:5]
+                if product not in matched:
+                    matched.append(product)
+                break
+    return matched
 
 
 def parse_date(date_str: str) -> str:
@@ -174,27 +142,17 @@ def parse_rss(xml_bytes: bytes, source: str) -> list:
         if not title_en:
             continue
 
-        # タグと製品判定は英語原文で行う (キーワードが英語のため)
-        product = detect_product(title_en, desc_en)
-        status = detect_status(title_en, desc_en)
-        tags = extract_tags(title_en, desc_en)
+        # 製品タグを判定 (英語原文ベース)
+        products = detect_products(title_en, desc_en)
+        primary_product = products[0] if products else "Power Platform"
 
-        categories = []
-        for cat_el in item_el.findall("category"):
-            if cat_el.text:
-                categories.append(cat_el.text.strip())
-        for cat in categories[:3]:
-            if cat not in tags and len(tags) < 5:
-                tags.append(cat)
-
-        # 要約を200文字で切る
+        # 要約を300文字で切る
         summary_en = desc_en[:300] + "..." if len(desc_en) > 300 else desc_en
 
         # 日本語に翻訳
         print(f"  Translating: {title_en[:60]}...")
         title_ja = translate_to_ja(title_en)
         summary_ja = translate_to_ja(summary_en)
-        # APIへの負荷軽減のため少し待つ
         time.sleep(0.5)
 
         items.append({
@@ -202,9 +160,8 @@ def parse_rss(xml_bytes: bytes, source: str) -> list:
             "title": title_ja,
             "titleOriginal": title_en,
             "summary": summary_ja,
-            "status": status,
-            "product": product,
-            "tags": tags,
+            "product": primary_product,
+            "tags": products,
             "url": link,
             "source": source,
         })
