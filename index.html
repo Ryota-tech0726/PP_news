@@ -11,6 +11,7 @@
     --pp-purple:#742774;--pp-purple-dark:#5B1F5B;--pp-purple-mid:#8C3A8C;
     --bg:#F3F2F1;--surface:#FFFFFF;--surface-border:#E1DFDD;--surface-hover:#FAF9F8;
     --text:#323130;--text-secondary:#605E5C;--text-muted:#A19F9D;
+    --warn-bg:#FFF4CE;--warn-border:#F2C94C;--warn-text:#6B5A17;
     --card-radius:8px;--transition:0.2s ease;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -25,6 +26,9 @@
   .header-text p a{color:#fff;text-decoration:underline;text-underline-offset:2px}
   .about-btn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;padding:8px 20px;border-radius:6px;font-size:14px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;white-space:nowrap;transition:all var(--transition)}
   .about-btn:hover{background:rgba(255,255,255,0.2)}
+
+  .notice-banner{background:var(--warn-bg);border-bottom:1px solid var(--warn-border);padding:12px 24px;color:var(--warn-text);font-size:13px;text-align:center;line-height:1.6}
+  .notice-banner strong{font-weight:700}
 
   .search-section{max-width:1200px;margin:0 auto;padding:28px 24px 16px}
   .search-box{max-width:720px;margin:0 auto;position:relative}
@@ -49,7 +53,8 @@
   .card{background:var(--surface);border:1px solid var(--surface-border);border-radius:var(--card-radius);padding:24px;display:flex;flex-direction:column;transition:all var(--transition)}
   .card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);border-color:#D2D0CE}
   .card-date{display:inline-block;background:rgba(116,39,116,0.08);color:var(--pp-purple);font-size:13px;font-weight:600;padding:4px 12px;border-radius:4px;margin-bottom:14px;align-self:flex-start}
-  .card-title{font-size:16px;font-weight:700;color:var(--text);line-height:1.5;margin-bottom:10px}
+  .card-title{font-size:16px;font-weight:700;color:var(--text);line-height:1.5;margin-bottom:6px}
+  .card-title-original{font-size:12px;color:var(--text-muted);font-weight:400;line-height:1.5;margin-bottom:10px;font-style:italic}
   .card-summary{font-size:13.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;flex:1;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
   .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
   .tag{display:inline-block;padding:3px 10px;border:1px solid var(--surface-border);border-radius:4px;font-size:12px;color:var(--text-secondary);background:var(--surface-hover);white-space:nowrap}
@@ -106,6 +111,10 @@
     <button class="about-btn" onclick="toggleModal()">このサイトについて</button>
   </div>
 </header>
+
+<div class="notice-banner">
+  <strong>ご注意:</strong> タイトル・要約は機械翻訳（Google翻訳）によるものです。正確な内容は各記事の「詳細を見る」から原文をご確認ください。
+</div>
 
 <div class="search-section">
   <div class="search-box">
@@ -171,7 +180,7 @@
     <a href="https://learn.microsoft.com/en-us/power-platform/release-plan/" target="_blank">Microsoft Power Platform Release Plan</a> /
     <a href="https://www.microsoft.com/en-us/power-platform/blog/" target="_blank">Power Platform Blog</a> /
     <a href="https://devblogs.microsoft.com/powerplatform/" target="_blank">Developer Blog</a><br>
-    本サイトは非公式の情報集約ページです｜正確な情報は Microsoft 公式サイトでご確認ください
+    本サイトは非公式の情報集約ページです｜機械翻訳のため不正確な場合があります｜正確な情報は Microsoft 公式サイトでご確認ください
   </p>
 </footer>
 
@@ -179,8 +188,9 @@
   <div class="modal">
     <button class="modal-close" onclick="toggleModal()">×</button>
     <h2>このサイトについて・免責事項</h2>
-    <p>本サイトは、Microsoft Power Platform の公式情報（Release Plan、Power Platform Blog、Developer Blog）をもとに、更新情報を集約・一覧表示することを目的として作成されたページです。</p>
-    <p>掲載内容は公開時点の情報に基づいており、その正確性・完全性・最新性を保証するものではありません。本サイトの情報を利用したことにより生じた、いかなる損害についても責任を負いかねます。</p>
+    <p>本サイトは、Microsoft Power Platform の公式情報（Power Platform Blog、Developer Blog）の RSS フィードを自動取得し、機械翻訳（Google翻訳）により日本語化して一覧表示する非公式のページです。</p>
+    <p><strong>機械翻訳による翻訳の精度は保証されません。</strong> タイトルや要約のニュアンスが原文と異なる場合があります。正確な内容を確認したい場合は、必ず各記事の「詳細を見る」リンクから原文（英語）をご確認ください。</p>
+    <p>掲載内容の正確性・完全性・最新性は保証されません。本サイトの情報を利用したことにより生じた、いかなる損害についても責任を負いかねます。</p>
     <p>正確な情報については、必ず <a href="https://learn.microsoft.com/en-us/power-platform/" target="_blank">Microsoft 公式サイト</a> にてご確認ください。</p>
   </div>
 </div>
@@ -197,30 +207,41 @@ const lastUpdatedEl = document.getElementById('lastUpdated');
 
 function formatDate(s){const d=new Date(s);return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`}
 
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+
 function render(){
   const q=searchInput.value.toLowerCase();
   const prod=productFilter.value;
   const filtered=newsData.filter(item=>{
     if(activeStatus!=='all'&&item.status!==activeStatus)return false;
     if(prod!=='all'&&item.product!==prod)return false;
-    if(q&&!(item.title+' '+item.summary+' '+(item.tags||[]).join(' ')).toLowerCase().includes(q))return false;
+    if(q){
+      const hay=(item.title+' '+item.summary+' '+(item.titleOriginal||'')+' '+(item.tags||[]).join(' ')).toLowerCase();
+      if(!hay.includes(q))return false;
+    }
     return true;
   });
   visibleCountEl.textContent=filtered.length;
   if(!filtered.length){gridEl.innerHTML='<div class="empty-state"><h3>検索結果が見つかりません</h3><p>別のキーワードやフィルターでお試しください</p></div>';return}
-  gridEl.innerHTML=filtered.map(item=>`
+  gridEl.innerHTML=filtered.map(item=>{
+    const titleOriginal = item.titleOriginal && item.titleOriginal !== item.title
+      ? `<div class="card-title-original">${escapeHtml(item.titleOriginal)}</div>`
+      : '';
+    return `
     <div class="card">
       <span class="card-date">${formatDate(item.date)}</span>
-      <div class="card-title">${item.title}</div>
-      <div class="card-summary">${item.summary}</div>
-      <div class="card-tags">${(item.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      <div class="card-title">${escapeHtml(item.title)}</div>
+      ${titleOriginal}
+      <div class="card-summary">${escapeHtml(item.summary)}</div>
+      <div class="card-tags">${(item.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
       <a class="card-link" href="${item.url}" target="_blank" rel="noopener">詳細を見る →</a>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 async function loadNews(){
   try{
-    const resp=await fetch('news.json');
+    const resp=await fetch('news.json?t='+Date.now());
     if(!resp.ok)throw new Error('fetch failed');
     const data=await resp.json();
     newsData=data.items||[];
