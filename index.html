@@ -202,7 +202,6 @@ function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({"&":"&amp;",
 function render(){
   const q=searchInput.value.toLowerCase();
   const filtered=newsData.filter(item=>{
-    // 製品フィルター: tagsの中にactiveProductが含まれるかで判定
     if(activeProduct!=='all'){
       const tags = item.tags || [];
       if(!tags.includes(activeProduct))return false;
