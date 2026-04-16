@@ -27,7 +27,7 @@
   .about-btn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;padding:8px 20px;border-radius:6px;font-size:14px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;white-space:nowrap;transition:all var(--transition)}
   .about-btn:hover{background:rgba(255,255,255,0.2)}
 
-  .notice-banner{background:var(--warn-bg);border-bottom:1px solid var(--warn-border);padding:12px 24px;color:var(--warn-text);font-size:13px;text-align:center;line-height:1.6}
+  .notice-banner{background:var(--warn-bg);border-bottom:1px solid var(--warn-border);padding:12px 24px;color:var(--warn-text);font-size:13px;text-align:center;line-height:1.6;display:block}
   .notice-banner strong{font-weight:700}
 
   .search-section{max-width:1200px;margin:0 auto;padding:28px 24px 16px}
@@ -41,8 +41,6 @@
   .filter-btn{background:var(--surface);border:1px solid var(--surface-border);color:var(--text-secondary);padding:6px 16px;border-radius:20px;font-size:13px;font-family:inherit;cursor:pointer;transition:all var(--transition);white-space:nowrap}
   .filter-btn:hover{border-color:var(--pp-purple-mid);color:var(--pp-purple)}
   .filter-btn.active{background:var(--pp-purple);border-color:var(--pp-purple);color:#fff}
-  .product-select{background:var(--surface);border:1px solid var(--surface-border);color:var(--text-secondary);padding:6px 30px 6px 14px;border-radius:20px;font-size:13px;font-family:inherit;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23605E5C' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;transition:all var(--transition)}
-  .product-select:hover,.product-select:focus{border-color:var(--pp-purple-mid);color:var(--pp-purple)}
 
   .stats-bar{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--text-secondary);border-bottom:1px solid var(--surface-border);margin-bottom:24px}
   .stats-bar strong{color:var(--pp-purple);font-weight:600}
@@ -119,26 +117,19 @@
 <div class="search-section">
   <div class="search-box">
     <span class="search-icon">Q</span>
-    <input type="text" id="searchInput" placeholder="タイトル、要約、技術タグで検索...">
+    <input type="text" id="searchInput" placeholder="タイトル、要約で検索...">
   </div>
 </div>
 
-<div class="filters-section">
-  <button class="filter-btn active" data-status="all">すべて</button>
-  <button class="filter-btn" data-status="GA">GA</button>
-  <button class="filter-btn" data-status="Preview">Preview</button>
-  <button class="filter-btn" data-status="開発中">開発中</button>
-  <button class="filter-btn" data-status="廃止">廃止</button>
-  <select class="product-select" id="productFilter">
-    <option value="all">すべての製品</option>
-    <option value="Power Apps">Power Apps</option>
-    <option value="Power Automate">Power Automate</option>
-    <option value="Copilot Studio">Copilot Studio</option>
-    <option value="Power Pages">Power Pages</option>
-    <option value="Dataverse">Dataverse</option>
-    <option value="AI Builder">AI Builder</option>
-    <option value="管理・ガバナンス">管理・ガバナンス</option>
-  </select>
+<div class="filters-section" id="productFilters">
+  <button class="filter-btn active" data-product="all">すべて</button>
+  <button class="filter-btn" data-product="Power Apps">Power Apps</button>
+  <button class="filter-btn" data-product="Power Automate">Power Automate</button>
+  <button class="filter-btn" data-product="Copilot Studio">Copilot Studio</button>
+  <button class="filter-btn" data-product="Power Pages">Power Pages</button>
+  <button class="filter-btn" data-product="Dataverse">Dataverse</button>
+  <button class="filter-btn" data-product="AI Builder">AI Builder</button>
+  <button class="filter-btn" data-product="管理・ガバナンス">管理・ガバナンス</button>
 </div>
 
 <div class="stats-bar">
@@ -197,10 +188,9 @@
 
 <script>
 let newsData = [];
-let activeStatus = 'all';
+let activeProduct = 'all';
 const gridEl = document.getElementById('newsGrid');
 const searchInput = document.getElementById('searchInput');
-const productFilter = document.getElementById('productFilter');
 const totalCountEl = document.getElementById('totalCount');
 const visibleCountEl = document.getElementById('visibleCount');
 const lastUpdatedEl = document.getElementById('lastUpdated');
@@ -211,10 +201,12 @@ function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({"&":"&amp;",
 
 function render(){
   const q=searchInput.value.toLowerCase();
-  const prod=productFilter.value;
   const filtered=newsData.filter(item=>{
-    if(activeStatus!=='all'&&item.status!==activeStatus)return false;
-    if(prod!=='all'&&item.product!==prod)return false;
+    // 製品フィルター: tagsの中にactiveProductが含まれるかで判定
+    if(activeProduct!=='all'){
+      const tags = item.tags || [];
+      if(!tags.includes(activeProduct))return false;
+    }
     if(q){
       const hay=(item.title+' '+item.summary+' '+(item.titleOriginal||'')+' '+(item.tags||[]).join(' ')).toLowerCase();
       if(!hay.includes(q))return false;
@@ -258,12 +250,11 @@ async function loadNews(){
 }
 
 searchInput.addEventListener('input',render);
-productFilter.addEventListener('change',render);
-document.querySelectorAll('.filter-btn').forEach(btn=>{
+document.querySelectorAll('#productFilters .filter-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('#productFilters .filter-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
-    activeStatus=btn.dataset.status;
+    activeProduct=btn.dataset.product;
     render();
   });
 });
