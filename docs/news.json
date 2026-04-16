@@ -1,11 +1,13 @@
 {
-  "lastUpdated": "2026-04-16T04:17:05Z",
+  "lastUpdated": "2026-04-16T04:31:57Z",
   "totalCount": 20,
+  "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です",
   "items": [
     {
       "date": "2026-04-08",
-      "title": "Power Platform Monitor Alerts Are Now Generally Available",
-      "summary": "We are excited to announce that Power Platform Monitor alerts for apps, agents, and flows are now generally available! Monitor alerts meet the reliability and maturity standards required for general a...",
+      "title": "Power Platform モニター アラートの一般提供が開始されました",
+      "titleOriginal": "Power Platform Monitor Alerts Are Now Generally Available",
+      "summary": "アプリ、エージェント、フローの Power Platform Monitor アラートが一般利用可能になったことを発表できることを嬉しく思います。モニター アラートは、品質を向上させるための継続的な投資を経て、一般提供に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニターに関するポスト...",
       "status": "GA",
       "product": "Power Automate",
       "tags": [
@@ -16,8 +18,9 @@
     },
     {
       "date": "2026-04-06",
-      "title": "Agent Academy Spring Drop: Special Ops, Cowork Collective, and a Whole New Look",
-      "summary": "We’ve shipped a big round of updates to Agent Academy. Two new sections, a completely redone site experience, and more missions on the way. Here’s what’s changed. Quick recap for anyone new Agent Acad...",
+      "title": "エージェント アカデミー スプリング ドロップ: スペシャル オプス、コワーク コレクティブ、そしてまったく新しい外観",
+      "titleOriginal": "Agent Academy Spring Drop: Special Ops, Cowork Collective, and a Whole New Look",
+      "summary": "エージェント アカデミーに大規模なアップデートを配信しました。 2 つの新しいセクション、完全にやり直されたサイト エクスペリエンス、さらに多くのミッションが進行中です。変更点は次のとおりです。新しいエージェント アカデミーは、Microsoft Copilot Studio を使用してエージェントを構築する方法を学習するための無料のオープンソース カリキュラムです。",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -32,8 +35,9 @@
     },
     {
       "date": "2026-04-02",
-      "title": "Public Preview: Your business apps, now part of every conversation",
-      "summary": "Bring your Power Apps into Microsoft 365 Copilot. In public preview, makers can enable conversational access to model-driven app data with Grids and Forms, with Custom Tools coming soon. The post Publ...",
+      "title": "パブリック プレビュー: ビジネス アプリがあらゆる会話の一部に",
+      "titleOriginal": "Public Preview: Your business apps, now part of every conversation",
+      "summary": "Power Apps を Microsoft 365 Copilot に導入します。パブリック プレビューでは、メーカーはグリッドとフォームを使用してモデル駆動型アプリのデータに会話型でアクセスできるようになり、カスタム ツールも近々公開されます。投稿パブリック プレビュー: ビジネス アプリ、すべての会話の一部が Microsoft Power Plasma に最初に表示されました。",
       "status": "Preview",
       "product": "Power Apps",
       "tags": [
@@ -46,8 +50,9 @@
     },
     {
       "date": "2026-04-01",
-      "title": "​Building trustworthy AI: A practical framework for adaptive governance",
-      "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen. The post ​Building trustworthy AI: A practical framework for adaptive gov...",
+      "title": "信頼できる AI の構築: 適応型ガバナンスの実践的なフレームワーク",
+      "titleOriginal": "​Building trustworthy AI: A practical framework for adaptive governance",
+      "summary": "ガバナンスが単に人々ができないことのリストであるとしたら、それはガバナンスではありません。それは起こるのを待っている回避策の未処理です。 The post 信頼できる AI の構築: 適応型ガバナンスの実践的なフレームワーク 最初に Microsoft Power Platform ブログに掲載されました。",
       "status": "GA",
       "product": "管理・ガバナンス",
       "tags": [
@@ -58,8 +63,9 @@
     },
     {
       "date": "2026-04-01",
-      "title": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
-      "summary": "Building enterprise solutions is shifting from writing code to directing AI agents. Instead of stitching together APIs, CLIs, and scripts, developers are increasingly describing intent and letting age...",
+      "title": "Dataverse スキル: コーディング エージェントが Dataverse を話せるようになりました",
+      "titleOriginal": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
+      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI エージェントの指示へと移行しています。 API、CLI、スクリプトをつなぎ合わせる代わりに、開発者は意図を記述してエージェントを実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
       "status": "GA",
       "product": "Dataverse",
       "tags": [
@@ -73,8 +79,9 @@
     },
     {
       "date": "2026-03-19",
-      "title": "What’s new in Power Platform: March 2026 feature update",
-      "summary": "Welcome to the Power Platform monthly feature update! We will use this blog to share news in Power Platform from the last month, so you can find a summary of product, community, and learning updates f...",
+      "title": "Power Platform の新機能: 2026 年 3 月の機能更新",
+      "titleOriginal": "What’s new in Power Platform: March 2026 feature update",
+      "summary": "Power Platform の月例機能更新へようこそ!このブログを使用して先月の Power Platform のニュースを共有します。これにより、Power Platform からの製品、コミュニティ、学習の最新情報の概要を 1 か所で簡単に見つけることができます。投稿 Power Platform の新機能: 2026 年 3 月の機能更新...",
       "status": "GA",
       "product": "Power Platform",
       "tags": [],
@@ -83,8 +90,9 @@
     },
     {
       "date": "2026-03-18",
-      "title": "2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot Studio offerings",
-      "summary": "We’re excited to publish the 2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Role-based agents in Microsoft 365 Copilot. The post 2026 release wave 1 plans for Micr...",
+      "title": "Microsoft Dynamics 365、Microsoft Power Platform、Copilot Studio 製品の 2026 年リリース ウェーブ 1 計画",
+      "titleOriginal": "2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot Studio offerings",
+      "summary": "Microsoft Dynamics 365、Microsoft Power Platform、および Microsoft 365 Copilot のロールベース エージェントの 2026 年リリース ウェーブ 1 計画を公開できることを嬉しく思います。 Microsoft Dynamics 365、Microsoft Power Platform、Copilot Studio 製品の 2026 年以降リリース ウェーブ 1 計画は、Microso...",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -97,8 +105,9 @@
     },
     {
       "date": "2026-02-25",
-      "title": "New quality updates to modern controls in canvas apps",
-      "summary": "This release delivers quality and reliability improvements across nine modern controls in canvas apps, including Combo Box, Text Input, and Date Picker. Focused on real‑world performance, consistent b...",
+      "title": "キャンバス アプリの最新のコントロールに対する新しい品質更新",
+      "titleOriginal": "New quality updates to modern controls in canvas apps",
+      "summary": "このリリースでは、コンボ ボックス、テキスト入力、日付ピッカーなど、キャンバス アプリの 9 つの最新コントロールにわたって品質と信頼性が向上しました。これらのアップデートは、現実世界のパフォーマンス、一貫した動作、実稼働の準備状況に焦点を当て、キャンバスとして依存する基盤メーカーを強化します。",
       "status": "GA",
       "product": "Power Apps",
       "tags": [
@@ -109,8 +118,9 @@
     },
     {
       "date": "2026-02-17",
-      "title": "What’s new in Power Platform: February 2026 feature update",
-      "summary": "Apps, agents and Copilot Public preview: M365 Copilot chat in model-driven apps Copilot chat is now available directly inside apps built with Power Apps, bringing the intelligence of Microsoft 365 Cop...",
+      "title": "Power Platform の新機能: 2026 年 2 月の機能更新",
+      "titleOriginal": "What’s new in Power Platform: February 2026 feature update",
+      "summary": "アプリ、エージェント、および Copilot パブリック プレビュー: モデル駆動型アプリの M365 Copilot チャット Copilot チャットは、Power Apps で構築されたアプリ内で直接利用できるようになり、Microsoft 365 Copilot のインテリジェンスをビジネス プロセスのフローにもたらします。投稿 Power Platform の新機能: 2026 年 2 月の特集...",
       "status": "GA",
       "product": "Power Apps",
       "tags": [
@@ -124,8 +134,9 @@
     },
     {
       "date": "2026-02-11",
-      "title": "Public preview: Power Apps MCP and enhanced agent feed for your business applications",
-      "summary": "The Power Apps MCP Server (Public Preview) introduces a new era of human‑agent collaboration, enabling AI agents to automate repetitive app tasks with built‑in human oversight. Makers gain granular co...",
+      "title": "パブリック プレビュー: ビジネス アプリケーション向けの Power Apps MCP と拡張エージェント フィード",
+      "titleOriginal": "Public preview: Power Apps MCP and enhanced agent feed for your business applications",
+      "summary": "Power Apps MCP サーバー (パブリック プレビュー) は、人間とエージェントのコラボレーションの新時代を導入し、AI エージェントが人間による監視を組み込んで反復的なアプリ タスクを自動化できるようにします。メーカーは、再設計されたエージェント フィードに表示されるタスクを詳細に制御できるようになり、ユーザーは直感的なレビューと承認を得ることができます。",
       "status": "Preview",
       "product": "Power Apps",
       "tags": [
@@ -138,8 +149,9 @@
     },
     {
       "date": "2026-02-05",
-      "title": "Generally available: host and run code apps in Power Apps",
-      "summary": "We’re excited to announce that code apps in Power Apps are now generally available, empowering developers and IT alike at a moment when organizations are building more custom applications than ever. T...",
+      "title": "一般提供: Power Apps でコード アプリをホストおよび実行する",
+      "titleOriginal": "Generally available: host and run code apps in Power Apps",
+      "summary": "Power Apps のコード アプリが一般公開されたことを発表できることを嬉しく思います。これにより、組織がこれまで以上に多くのカスタム アプリケーションを構築している現在、開発者と IT の両方に力が与えられます。 The post 一般利用可能: Power Apps でコード アプリをホストして実行する 最初に表示されたのは Microsoft Power ...",
       "status": "GA",
       "product": "Power Apps",
       "tags": [
@@ -150,8 +162,9 @@
     },
     {
       "date": "2026-01-26",
-      "title": "Breaking down the facts about secure development with Power Platform",
-      "summary": "Today, organizations are being measured by how quickly they can innovate. Whether it’s launching new digital experiences, streamlining operations, or responding to customer needs in real time, the abi...",
+      "title": "Power Platform を使用した安全な開発に関する事実を分析する",
+      "titleOriginal": "Breaking down the facts about secure development with Power Platform",
+      "summary": "今日、組織はどれだけ早く革新できるかによって評価されています。新しいデジタル エクスペリエンスの立ち上げ、業務の合理化、顧客のニーズへのリアルタイムの対応など、迅速に行動できることが常に競争上の差別化要因となってきました。そして、それはますます重要性を増してきました...",
       "status": "GA",
       "product": "Power Platform",
       "tags": [
@@ -163,8 +176,9 @@
     },
     {
       "date": "2026-01-14",
-      "title": "Announcing Agent Academy: Operative",
-      "summary": "Earlier this year, we launched Agent Academy: Recruit, a foundational learning path designed to help makers and developers get started with building agents in Copilot Studio. The response exceeded our...",
+      "title": "エージェント アカデミーの発表: Operative",
+      "titleOriginal": "Announcing Agent Academy: Operative",
+      "summary": "今年の初めに、メーカーや開発者が Copilot Studio でエージェントの構築を開始できるように設計された基礎的な学習パスである Agent Academy: Recruit を開始しました。反応は私たちの予想を上回りました。開始以来、何千人もの学習者がリクルートのカリキュラムに取り組んできました。",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -179,8 +193,9 @@
     },
     {
       "date": "2025-08-20",
-      "title": "Announcing Copilot Studio Agent Academy: Your Mission Starts Now",
-      "summary": "Welcome to Copilot Studio Agent Academy Whether you’re just starting your journey with AI agents or looking to sharpen your skills in Microsoft Copilot Studio, we’ve got your mission briefing ready an...",
+      "title": "Copilot Studio エージェント アカデミーの発表: あなたの使命は今始まります",
+      "titleOriginal": "Announcing Copilot Studio Agent Academy: Your Mission Starts Now",
+      "summary": "Copilot Studio エージェント アカデミーへようこそ AI エージェントを使い始めたばかりの方でも、Microsoft Copilot Studio でスキルを磨きたいと考えている方でも、ミッション ブリーフィングの準備は整っています。準備を整えましょう。新しい、自分のペースで進められる Copilot Studio Agent Academy を導入できることを嬉しく思います。",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -195,8 +210,9 @@
     },
     {
       "date": "2025-07-30",
-      "title": "Introducing Plan Validation in Copilot Studio Kit",
-      "summary": "Ever wonder why your agent’s answers can be right but for the wrong reasons? Let’s dive into why that matters, with a brief foray into epistemology (bear with me!) Knowledge: More Than Just Right Answ...",
+      "title": "Copilot Studio Kit でのプラン検証の導入",
+      "titleOriginal": "Introducing Plan Validation in Copilot Studio Kit",
+      "summary": "エージェントの回答は正しいのに、なぜ間違った理由があるのか​​疑問に思ったことはありませんか?認識論に簡単に踏み込みながら、なぜそれが重要なのかを詳しく見ていきましょう (ご容赦ください!) 知識: 単なる正しい答え以上のもの 誰かに時間を尋ねると、その人が自信を持って「午後 2 時 30 分」と答えると想像してみてください。彼らは正しいのですが、それは...",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -210,8 +226,9 @@
     },
     {
       "date": "2025-07-15",
-      "title": "Power Platform API and SDKs: From UX-First to API-First",
-      "summary": "Historically, Power Platform has empowered administrators through the Power Platform Admin Center (PPAC). This UX-first experience offered a seamless, intuitive interface for managing environments, au...",
+      "title": "Power Platform API と SDK: UX ファーストから API ファーストへ",
+      "titleOriginal": "Power Platform API and SDKs: From UX-First to API-First",
+      "summary": "これまで、Power Platform は Power Platform 管理センター (PPAC) を通じて管理者に権限を与えてきました。この UX ファーストのエクスペリエンスは、環境の管理、日常業務の自動化、プラットフォーム内の新機能の発見のためのシームレスで直感的なインターフェイスを提供しました。今日は...",
       "status": "GA",
       "product": "管理・ガバナンス",
       "tags": [
@@ -224,7 +241,8 @@
     {
       "date": "2025-04-28",
       "title": "Microsoft Copilot Studio ❤️ MCP",
-      "summary": "Ever wished your AI agents could tap into live data or execute actions beyond their built-in capabilities? Enter Model Context Protocol (MCP)—a game-changer for integrating external tools and data sou...",
+      "titleOriginal": "Microsoft Copilot Studio ❤️ MCP",
+      "summary": "AI エージェントがライブ データを利用したり、組み込み機能を超えたアクションを実行できたらと思ったことはありませんか?モデル コンテキスト プロトコル (MCP) を導入してください。これは、外部ツールとデータ ソースを Copilot Studio エージェントに直接統合するための革新的なツールです。 🧠MCPとは何ですか? MCP は、さまざまな用途に使用できるユニバーサル アダプターと考えてください。",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
@@ -239,8 +257,9 @@
     },
     {
       "date": "2025-04-20",
-      "title": "Announcing the ‘Work with Power Fx functions’ Learning Path",
-      "summary": "Based on community feedback, we’ve added a new learning path: Work with Power Fx functions. Check it out! The post Announcing the ‘Work with Power Fx functions’ Learning Path appeared first on Power P...",
+      "title": "「Power Fx 関数の操作」ラーニング パスの発表",
+      "titleOriginal": "Announcing the ‘Work with Power Fx functions’ Learning Path",
+      "summary": "コミュニティからのフィードバックに基づいて、Power Fx 関数の操作という新しい学習パスを追加しました。それをチェックしてください！ 「Power Fx 関数の使用」ラーニング パスの発表という投稿は、Power Platform 開発者ブログに最初に掲載されました。",
       "status": "GA",
       "product": "Power Platform",
       "tags": [
@@ -254,8 +273,9 @@
     },
     {
       "date": "2025-03-25",
-      "title": "Announcing the winners of the 2025 Powerful Devs Hack Together",
-      "summary": "The 2025 Powerful Devs Hack Together brought developers together to build secure and scalable AI-powered solutions using Power Platform, Azure, AI Builder, and more. If you missed the event, you can s...",
+      "title": "2025 Powerful Devs Hack Together の勝者を発表",
+      "titleOriginal": "Announcing the winners of the 2025 Powerful Devs Hack Together",
+      "summary": "2025 Powerful Devs Hack Together では、Power Platform、Azure、AI Builder などを使用して、安全でスケーラブルな AI を活用したソリューションを構築するために開発者が集まりました。イベントに参加できなかった場合でも、AI、自動化、セキュリティ、拡張性などをカバーするすべてのセッションを視聴できます。 🎥見てください...",
       "status": "GA",
       "product": "AI Builder",
       "tags": [
@@ -270,8 +290,9 @@
     },
     {
       "date": "2025-03-05",
-      "title": "Publishing, Managing and Securing: Building with Microsoft Copilot Studio",
-      "summary": "If you would like to start building an agent in Microsoft Copilot Studio, don’t worry we’ve got you covered! In our AI in Action: Building with Copilot Studio series on the Microsoft Power Platform Yo...",
+      "title": "公開、管理、セキュリティ保護: Microsoft Copilot Studio を使用した構築",
+      "titleOriginal": "Publishing, Managing and Securing: Building with Microsoft Copilot Studio",
+      "summary": "Microsoft Copilot Studio でエージェントの構築を開始したい場合でも、私たちがサポートしますのでご安心ください。 Microsoft Power Platform YouTube チャンネルの AI in Action: Building with Copilot Studio シリーズでは、時代の構築を始める方法をガイドするいくつかのエピソードをご用意しています。",
       "status": "GA",
       "product": "Copilot Studio",
       "tags": [
