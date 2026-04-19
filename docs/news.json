@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T15:32:22Z",
+  "lastUpdated": "2026-04-19T15:32:39Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
@@ -7,7 +7,7 @@
       "date": "2026-04-08",
       "title": "Power Platform モニター アラートは Generally Available になりました",
       "titleOriginal": "Power Platform Monitor Alerts Are Now Generally Available",
-      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質向上のための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
+      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質を向上させるための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
       "product": "Power Platform",
       "tags": [],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
@@ -54,7 +54,7 @@
       "date": "2026-04-01",
       "title": "Dataverse スキル: あなたのコーディング Agent が Dataverse を話すようになりました",
       "titleOriginal": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
-      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は API、CLI、スクリプトをつなぎ合わせる代わりに、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
+      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は、API、CLI、スクリプトをつなぎ合わせるのではなく、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
       "product": "Dataverse",
       "tags": [
         "Dataverse"
@@ -137,7 +137,7 @@
       "date": "2026-01-26",
       "title": "Power Platform を使用した安全な開発に関する事実を分析する",
       "titleOriginal": "Breaking down the facts about secure development with Power Platform",
-      "summary": "今日、組織はどれだけ早く革新できるかによって評価されています。新しいデジタル エクスペリエンスの立ち上げ、業務の合理化、顧客のニーズへのリアルタイムの対応など、迅速に行動できることが常に競争上の差別化要因となってきました。そして、その重要性はますます高まっています...",
+      "summary": "今日、組織はどれだけ早く革新できるかによって評価されています。新しいデジタル エクスペリエンスの立ち上げ、業務の合理化、顧客のニーズへのリアルタイムの対応など、迅速な対応が常に競争上の差別化要因となってきました。そして、それはますます重要性を増してきました...",
       "product": "Power Platform",
       "tags": [],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/01/26/breaking-down-the-facts-about-secure-development-with-power-platform/",
@@ -195,7 +195,7 @@
       "date": "2025-04-28",
       "title": "Microsoft Copilot Studio ❤️ MCP",
       "titleOriginal": "Microsoft Copilot Studio ❤️ MCP",
-      "summary": "AI Agents がライブ データを利用したり、組み込み機能を超えたアクションを実行できたらと思ったことはありませんか? Model Context Protocol (MCP) を入力してください。これは、外部ツールとデータ ソースを Copilot Studio Agents に直接統合するための革新的なツールです。 🧠 MCPとは何ですか? MCP は、...",
+      "summary": "AI Agents がライブ データを利用したり、組み込み機能を超えたアクションを実行できたらと思ったことはありませんか? Model Context Protocol (MCP) を入力してください。これは、外部ツールとデータ ソースを Copilot Studio Agents に直接統合する革新的なツールです。 🧠 MCPとは何ですか? MCP は、...",
       "product": "Copilot Studio",
       "tags": [
         "Copilot Studio"
@@ -230,7 +230,7 @@
       "date": "2025-03-05",
       "title": "公開、管理、セキュリティ保護: Microsoft Copilot Studio を使用した構築",
       "titleOriginal": "Publishing, Managing and Securing: Building with Microsoft Copilot Studio",
-      "summary": "Microsoft Copilot Studio で Agent の構築を開始したい場合でも、私たちがサポートしますので、ご安心ください。 Microsoft Power Platform YouTube チャンネルの AI in Action: Building with Copilot Studio シリーズでは、時代の構築を開始する方法をガイドするいくつかのエピソードが用意されています。",
+      "summary": "Microsoft Copilot Studio で Agent の構築を開始したい場合は、私たちがサポートしますので、ご安心ください。 Microsoft Power Platform YouTube チャンネルの AI in Action: Building with Copilot Studio シリーズでは、時代の構築を開始する方法をガイドするいくつかのエピソードが用意されています。",
       "product": "Copilot Studio",
       "tags": [
         "Copilot Studio"
