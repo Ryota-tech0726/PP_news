@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T15:32:39Z",
+  "lastUpdated": "2026-04-20T16:03:29Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
@@ -100,7 +100,7 @@
       "date": "2026-02-17",
       "title": "Power Platform の新機能: 2026 年 2 月の機能更新",
       "titleOriginal": "What’s new in Power Platform: February 2026 feature update",
-      "summary": "アプリ、Agents および Copilot Public Preview: Model-driven Apps の M365 Copilot チャット Copilot チャットが、Power Apps で構築されたアプリ内で直接利用できるようになり、Microsoft 365 Copilot のインテリジェンスをビジネス プロセスのフローに導入します。投稿 Power Platform の新機能: 2026 年 2 月の機能...",
+      "summary": "アプリ、Agents および Copilot Public Preview: M365 Model-driven Apps の Copilot チャット Copilot チャットが、Power Apps で構築されたアプリ内で直接利用できるようになり、Microsoft 365 Copilot のインテリジェンスをビジネス プロセスのフローに組み込みます。投稿 Power Platform の新機能: 2026 年 2 月の機能...",
       "product": "Power Apps",
       "tags": [
         "Power Apps",
@@ -137,7 +137,7 @@
       "date": "2026-01-26",
       "title": "Power Platform を使用した安全な開発に関する事実を分析する",
       "titleOriginal": "Breaking down the facts about secure development with Power Platform",
-      "summary": "今日、組織はどれだけ早く革新できるかによって評価されています。新しいデジタル エクスペリエンスの立ち上げ、業務の合理化、顧客のニーズへのリアルタイムの対応など、迅速な対応が常に競争上の差別化要因となってきました。そして、それはますます重要性を増してきました...",
+      "summary": "今日、組織はどれだけ早く革新できるかによって評価されています。新しいデジタル エクスペリエンスの立ち上げ、業務の合理化、顧客のニーズへのリアルタイムの対応など、迅速な対応が常に競争上の差別化要因となってきました。そして、その重要性はますます高まっています...",
       "product": "Power Platform",
       "tags": [],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/01/26/breaking-down-the-facts-about-secure-development-with-power-platform/",
