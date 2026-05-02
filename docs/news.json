@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T15:50:54Z",
+  "lastUpdated": "2026-05-02T15:40:06Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
@@ -149,7 +149,7 @@
       "date": "2026-02-05",
       "title": "Generally Available: Power Apps で Code Apps をホストして実行します",
       "titleOriginal": "Generally available: host and run code apps in Power Apps",
-      "summary": "We’re excited to announce that Code Apps in Power Apps are now Generally Available, empowering developers and IT alike at a moment when organizations are building more custom applications than ever.投稿 Generally Available: Power Apps で Code Apps をホストして実行する 最初に Microsoft Power ...",
+      "summary": "Power Apps の Code Apps が Generally Available になり、組織がこれまで以上に多くのカスタム アプリケーションを構築している現在、開発者と IT の両方に力を与えることを発表できることを嬉しく思います。投稿 Generally Available: Power Apps で Code Apps をホストして実行する 最初に Microsoft Power ...",
       "product": "Power Apps",
       "tags": [
         "Power Apps"
