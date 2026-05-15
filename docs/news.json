@@ -1,8 +1,32 @@
 {
-  "lastUpdated": "2026-05-14T16:57:37Z",
+  "lastUpdated": "2026-05-15T16:47:49Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
+    {
+      "date": "2026-05-13",
+      "title": "Power Fx: ユーザー定義型 Generally Available",
+      "titleOriginal": "Power Fx: User Defined Types Generally Available",
+      "summary": "ユーザー定義型 (UDT) は Generally Available になりました。 Power Apps Studio バージョン 3.26044 以降、UDT は新しいアプリに対してデフォルトで有効になっており、[設定] > [更新] > [新規] > [ユーザー定義タイプ] で既存のアプリに対して有効にできます。投稿 Power Fx: ユーザー定義型 Generally Available 最初に表示されました ...",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-fx-user-defined-types-generally-available/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "Power Apps MCP Server はエンタープライズ向けの閉ループ学習を導入 Agents",
+      "titleOriginal": "Power Apps MCP server introduces closed-loop learning for enterprise agents",
+      "summary": "Agents のビルドは高速です。組織がどのように機能するかを彼らに教えるのは難しい部分でした。 Power Apps MCP Server の閉ループ学習の導入: すべての修正により、ビジネスに合わせて Agent が自動的に調整されます。投稿 Power Apps MCP Server では、エンタープライズ向けの閉ループ学習を紹介しています。",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/",
+      "source": "Blog"
+    },
     {
       "date": "2026-04-30",
       "title": "Dataverse プラグインがクロード マーケットプレイスに登場",
@@ -136,37 +160,13 @@
       "date": "2026-02-17",
       "title": "Power Platform の新機能: 2026 年 2 月の機能更新",
       "titleOriginal": "What’s new in Power Platform: February 2026 feature update",
-      "summary": "アプリ、Agents および Copilot Public Preview: Model-driven Apps の M365 Copilot チャット Copilot チャットが、Power Apps で構築されたアプリ内で直接利用できるようになり、Microsoft 365 Copilot のインテリジェンスをビジネス プロセスのフローに導入します。投稿 Power Platform の新機能: 2026 年 2 月の機能...",
+      "summary": "アプリ、Agents および Copilot Public Preview: M365 Model-driven Apps の Copilot チャット Copilot チャットが、Power Apps で構築されたアプリ内で直接利用できるようになり、Microsoft 365 Copilot のインテリジェンスをビジネス プロセスのフローに組み込みます。投稿 Power Platform の新機能: 2026 年 2 月の機能...",
       "product": "Power Apps",
       "tags": [
         "Power Apps",
         "Copilot Studio"
       ],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/",
-      "source": "Blog"
-    },
-    {
-      "date": "2026-02-11",
-      "title": "Public Preview: ビジネス アプリケーション向けの Power Apps MCP および拡張された Agent Feed",
-      "titleOriginal": "Public preview: Power Apps MCP and enhanced agent feed for your business applications",
-      "summary": "Power Apps MCP Server (Public Preview) は、人間と Agent コラボレーションの新時代を導入し、AI Agents が人間の監視機能を組み込んで反復的なアプリのタスクを自動化できるようにします。メーカーは、再設計された Agent Feed でどのタスクが表示されるかを詳細に制御できるようになり、ユーザーは直感的なレビューと承認を得ることができます。",
-      "product": "Power Apps",
-      "tags": [
-        "Power Apps"
-      ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/public-preview-power-apps-mcp-and-enhanced-agent-feed-for-your-business-applications/",
-      "source": "Blog"
-    },
-    {
-      "date": "2026-02-05",
-      "title": "Generally Available: Power Apps で Code Apps をホストして実行します",
-      "titleOriginal": "Generally available: host and run code apps in Power Apps",
-      "summary": "Power Apps の Code Apps が Generally Available になり、組織がこれまで以上に多くのカスタム アプリケーションを構築している現在、開発者と IT の両方に力を与えることを発表できることを嬉しく思います。投稿 Generally Available: Power Apps で Code Apps をホストして実行する 最初に Microsoft Power ...",
-      "product": "Power Apps",
-      "tags": [
-        "Power Apps"
-      ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/generally-available-host-and-run-code-apps-in-power-apps/",
       "source": "Blog"
     },
     {
