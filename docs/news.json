@@ -1,23 +1,11 @@
 {
-  "lastUpdated": "2026-05-15T16:47:49Z",
+  "lastUpdated": "2026-05-16T15:52:05Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
     {
-      "date": "2026-05-13",
-      "title": "Power Fx: ユーザー定義型 Generally Available",
-      "titleOriginal": "Power Fx: User Defined Types Generally Available",
-      "summary": "ユーザー定義型 (UDT) は Generally Available になりました。 Power Apps Studio バージョン 3.26044 以降、UDT は新しいアプリに対してデフォルトで有効になっており、[設定] > [更新] > [新規] > [ユーザー定義タイプ] で既存のアプリに対して有効にできます。投稿 Power Fx: ユーザー定義型 Generally Available 最初に表示されました ...",
-      "product": "Power Apps",
-      "tags": [
-        "Power Apps"
-      ],
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-fx-user-defined-types-generally-available/",
-      "source": "Blog"
-    },
-    {
       "date": "2026-05-12",
-      "title": "Power Apps MCP Server はエンタープライズ向けの閉ループ学習を導入 Agents",
+      "title": "Power Apps MCP Server はエンタープライズ向け閉ループ学習を導入 Agents",
       "titleOriginal": "Power Apps MCP server introduces closed-loop learning for enterprise agents",
       "summary": "Agents のビルドは高速です。組織がどのように機能するかを彼らに教えるのは難しい部分でした。 Power Apps MCP Server の閉ループ学習の導入: すべての修正により、ビジネスに合わせて Agent が自動的に調整されます。投稿 Power Apps MCP Server では、エンタープライズ向けの閉ループ学習を紹介しています。",
       "product": "Power Apps",
@@ -67,7 +55,7 @@
       "date": "2026-04-08",
       "title": "Power Platform モニター アラートは Generally Available になりました",
       "titleOriginal": "Power Platform Monitor Alerts Are Now Generally Available",
-      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質を向上させるための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
+      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質向上のための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
       "product": "Power Platform",
       "tags": [],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
@@ -114,7 +102,7 @@
       "date": "2026-04-01",
       "title": "Dataverse スキル: あなたのコーディング Agent が Dataverse を話すようになりました",
       "titleOriginal": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
-      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は、API、CLI、スクリプトをつなぎ合わせるのではなく、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
+      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は API、CLI、スクリプトをつなぎ合わせる代わりに、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
       "product": "Dataverse",
       "tags": [
         "Dataverse"
@@ -167,6 +155,18 @@
         "Copilot Studio"
       ],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/",
+      "source": "Blog"
+    },
+    {
+      "date": "2026-02-11",
+      "title": "Public Preview: ビジネス アプリケーション向けの Power Apps MCP および拡張された Agent Feed",
+      "titleOriginal": "Public preview: Power Apps MCP and enhanced agent feed for your business applications",
+      "summary": "Power Apps MCP Server (Public Preview) は、人間と Agent コラボレーションの新時代を導入し、AI Agents が人間の監視機能を組み込んで反復的なアプリのタスクを自動化できるようにします。メーカーは、再設計された Agent Feed でどのタスクが表示されるかを詳細に制御できるようになり、ユーザーは直感的なレビューと結果を得ることができます。",
+      "product": "Power Apps",
+      "tags": [
+        "Power Apps"
+      ],
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/public-preview-power-apps-mcp-and-enhanced-agent-feed-for-your-business-applications/",
       "source": "Blog"
     },
     {
