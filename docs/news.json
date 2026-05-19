@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T17:28:14Z",
+  "lastUpdated": "2026-05-19T17:35:26Z",
   "totalCount": 20,
   "translationNote": "タイトル・要約はGoogle翻訳による機械翻訳です (固有名詞は英語のまま保持)",
   "items": [
@@ -67,7 +67,7 @@
       "date": "2026-04-08",
       "title": "Power Platform モニター アラートは Generally Available になりました",
       "titleOriginal": "Power Platform Monitor Alerts Are Now Generally Available",
-      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質を向上させるための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
+      "summary": "アプリ、Agents、およびフローの Power Platform モニター アラートが Generally Available になったことを発表できることを嬉しく思います。モニター アラートは、品質向上のための継続的な投資を経て、General Availability に必要な信頼性と成熟度の基準を満たしています。 Power Platform モニター エールの投稿...",
       "product": "Power Platform",
       "tags": [],
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
@@ -114,7 +114,7 @@
       "date": "2026-04-01",
       "title": "Dataverse スキル: あなたのコーディング Agent が Dataverse を話すようになりました",
       "titleOriginal": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
-      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は、API、CLI、スクリプトをつなぎ合わせるのではなく、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
+      "summary": "エンタープライズ ソリューションの構築は、コードの作成から AI Agents の指示へと移行しています。開発者は API、CLI、スクリプトをつなぎ合わせる代わりに、意図を記述して Agents を実行させることが増えています。 Dataverse のようなエンタープライズ プラットフォームの場合、これにより新しい要件が作成されます。",
       "product": "Dataverse",
       "tags": [
         "Dataverse"
